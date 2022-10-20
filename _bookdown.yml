@@ -1,0 +1,7 @@
+---
+book_filename: "manual_inteligencia"
+repo: https://github.com/R-egreen/manual_inteligencia
+output_dir: docs
+new_session: yes
+rmd_files: ["index.Rmd", "01-intro.Rmd", "02-convencoes.Rmd"]
+---
