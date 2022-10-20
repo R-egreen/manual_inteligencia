@@ -1,7 +1,6 @@
 # Convenções de padrão de código, dados e metadados
 
-
-Este documento fornece convenções de código e metadados recebidos pelo time de Data Analytics da re.green. Para informações adicionais, por favor, consulte [Sara Mortara](mailto:sara.mortara@re.green), [Felipe Bocca](mailto:felipe.bocca@re.green) ou [Nathalia Monalisa](mailto:nathalia.monalisa@re.green).
+Este capítulo fornece convenções de código e metadados recebidos pelo time de Inteligência da re.green. Para informações adicionais, por favor, consulte [Sara Mortara](mailto:sara.mortara@re.green), [Felipe Bocca](mailto:felipe.bocca@re.green) ou [Nathalia Monalisa](mailto:nathalia.monalisa@re.green).
 
 ## Convenções de código
 
@@ -33,7 +32,7 @@ Toda função (incluindo funções auxiliares) deve ser documentada seguindo o p
 
 ### Geral
 
-Cada produto deve ter um repositório no github. Este repositório será parte da organização re.green no github e será dada autorização para inclusão de colaboradores(as) com papel de escrita.
+Para entrega de produtos na forma de código, cada produto deve ter um repositório no github. Este repositório será parte da organização re.green no github e será dada autorização para inclusão de colaboradores(as) com papel de escrita.
 
 Os repositórios devem ser auto-contidos e sempre que possível usar caminhos relativos para ler e escrever dados. Caso exista dependência de dados que não estão versionados, explicitar.
 
