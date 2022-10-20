@@ -1,7 +1,7 @@
 # Convenções de padrão de código, dados e metadados
 
 
-Este documento fornece convenções de código e metadados recebidos pelo time de Data Analytics da re.green. Para informações adicionais, por favor, consulte [Sara Mortara:email:](sara.mortara@re.green), [Felipe Bocca:email:](felipe.bocca@re.green) ou [Nathalia Monalisa:email:](nathalia.monalisa@re.green).
+Este documento fornece convenções de código e metadados recebidos pelo time de Data Analytics da re.green. Para informações adicionais, por favor, consulte [Sara Mortara](mailto:sara.mortara@re.green), [Felipe Bocca](mailto:felipe.bocca@re.green) ou [Nathalia Monalisa](mailto:nathalia.monalisa@re.green).
 
 ## Convenções de código
 

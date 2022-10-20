@@ -2,8 +2,8 @@
 
 ## Mandatos
 
-1.	Garantir que a inovação e agilidade estão se difundindo na empresa
-2.	Melhorar o fluxo de informações nos níveis Estratégico e Operacional
+1. Garantir que a inovação e agilidade estão se difundindo na empresa
+2. Melhorar o fluxo de informações nos níveis Estratégico e Operacional
 
 Nós aplicamos e difundimos o modo de pensar ágil e ferramentas quantitativas, para sermos mais competitivos, resilientes frente a incertezas, e melhores na tomada de decisão. Nós utilizamos a forma de pensar ágil, modelos científicos, análise de dados e soluções de tecnologia.
 
