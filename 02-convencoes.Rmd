@@ -38,7 +38,14 @@ Os repositórios devem ser auto-contidos e sempre que possível usar caminhos re
 
 Acrescentar um README.md explicando o contexto do projeto e especificar quais bibliotecas (nomes do pacote e versão) e dados são necessários ao projeto. Para bibliotecas, deve-se utilizar o pacote [**renv**](https://rstudio.github.io/renv/articles/renv.html) para declaração de dependências e suas respectivas versões.
 
-Independente do fluxo git utilizado, adotar a nomenclatura `main` para o ramo principal e sempre mantê-lo atualizado.
+### Modelo de versionamento do código
+
+Em relação ao modelo de versionamento do código, será utilizado o Gitflow. 
+
+A ramificação `main` deve armazenar a base de código principal e nunca deve conter código quebrado. Já o desenvolvimento deve ser encapsulado na ramificação `dev`, que funciona como mãe para as ramificações de features e hot-fix e serve como ponto de bifurcação e união para elas. Uma vez que o ramo `dev` tenha adquirido novas incorporações suficientes para que o produto seja considerado uma nova versão, deve-se fazer o merge com o ramo principal `main`.
+
+Para mais informações, consulte o [**tutorial**](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow).
+
 
 ### Conteúdo do repositório
 
@@ -47,7 +54,6 @@ Seguir o conteúdo e estrutura de pastas de acordo com a definição a seguir.
     .
     ├── README.md # contendo intruções gerais para uso 
     ├── renv.lock*
-    ├── data/ # dados de entrada com respectivo arquivo de metadados
     ├── script/ # pasta contendo scripts de exemplo de chamada das funções
     └── functions/ # pasta contendo funções de R documentadas, cada função em um arquivo separado
 
@@ -59,19 +65,21 @@ Seguir o conteúdo e estrutura de pastas de acordo com a definição a seguir.
 
 ### Dados tabulares
 
-Todo dado tabular deve conter um csv de descrição de metadados seguindo o padrão abaixo.
+Todo dado tabular deve conter um .csv de descrição de metadados seguindo o padrão abaixo:
 
 Variável | Descrição | Tipo de dado | Exemplo
 --------:|--------:| --------:|--------:
 Gênero| Gênero da espécie | caractere | Schinus
 Forma de vida | Descrição da forma de vida da espécie | caractere | árvore; epífita 
 
+
+Também criamos um exemplo de metadados para o famoso dataset `iris` na pasta **examples/data**.
+
 ### Dados espaciais
 
-Os arquivos espaciais, rasters e shapefiles, devem ter um arquivo de texto associado contendo informação de projeção (ESRI), resolução e escala. Todo shapefile deve ser exportado em formato **gpkg**.
-
+Os arquivos espaciais, rasters e shapefiles, devem ter um arquivo de texto associado contendo informação de projeção (ESRI), resolução e escala. Para ver um exemplo, consulte a pasta **examples/data**. Todo shapefile deve ser exportado em formato **gpkg**.
 
 ## Entrega de dados
 
-Para os conjuntos de dados que não serão versionados, a re.green irá fornecer um link de um [bucket AWS](https://aws.amazon.com/pt/s3/) para upload dos arquivos e seus respectivos metadados. 
+Todos os dados e seus respectivos metadados deverão ser armazenados em um [bucket AWS](https://aws.amazon.com/pt/s3/), cujo link será disponibilizado pela re.green. 
 
