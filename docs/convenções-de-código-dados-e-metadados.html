@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Convenções de código, dados e metadados | Manual equipe Inteligência re.green</title>
+  <meta name="description" content="3 Convenções de código, dados e metadados | Manual equipe Inteligência re.green" />
+  <meta name="generator" content="bookdown 0.28 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Convenções de código, dados e metadados | Manual equipe Inteligência re.green" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="R-egreen/manual_inteligencia" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Convenções de código, dados e metadados | Manual equipe Inteligência re.green" />
+  
+  
+  
+
+<meta name="author" content="construído pela equipe" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="a-diretoria-de-inteligência.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Manual de Inteligência</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução</a></li>
+<li class="chapter" data-level="2" data-path="a-diretoria-de-inteligência.html"><a href="a-diretoria-de-inteligência.html"><i class="fa fa-check"></i><b>2</b> A diretoria de inteligência</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="a-diretoria-de-inteligência.html"><a href="a-diretoria-de-inteligência.html#mandatos"><i class="fa fa-check"></i><b>2.1</b> Mandatos</a></li>
+<li class="chapter" data-level="2.2" data-path="a-diretoria-de-inteligência.html"><a href="a-diretoria-de-inteligência.html#diversidade"><i class="fa fa-check"></i><b>2.2</b> Diversidade</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html"><i class="fa fa-check"></i><b>3</b> Convenções de código, dados e metadados</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#convenções-de-código"><i class="fa fa-check"></i><b>3.1</b> Convenções de código</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#geral"><i class="fa fa-check"></i><b>3.1.1</b> Geral</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#dependência-de-pacotes"><i class="fa fa-check"></i><b>3.2</b> Dependência de pacotes</a></li>
+<li class="chapter" data-level="3.3" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#repositórios-de-código"><i class="fa fa-check"></i><b>3.3</b> Repositórios de código</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#geral-1"><i class="fa fa-check"></i><b>3.3.1</b> Geral</a></li>
+<li class="chapter" data-level="3.3.2" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#conteúdo-do-repositório"><i class="fa fa-check"></i><b>3.3.2</b> Conteúdo do repositório</a></li>
+<li class="chapter" data-level="3.3.3" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#versionamento"><i class="fa fa-check"></i><b>3.3.3</b> Versionamento</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#padrão-de-metadados"><i class="fa fa-check"></i><b>3.4</b> Padrão de metadados</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#dados-tabulares"><i class="fa fa-check"></i><b>3.4.1</b> 1 - Dados tabulares:</a></li>
+<li class="chapter" data-level="3.4.2" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#dados-espaciais"><i class="fa fa-check"></i><b>3.4.2</b> 2- Dados espaciais</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#entrega-dos-dados"><i class="fa fa-check"></i><b>3.5</b> Entrega dos dados</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Manual equipe Inteligência re.green</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="convenções-de-código-dados-e-metadados" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Convenções de código, dados e metadados<a href="convenções-de-código-dados-e-metadados.html#convenções-de-código-dados-e-metadados" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Este capítulo fornece convenções de código e dados para os projetos analíticos da empresa <a href="https://www.re.green/"><strong>re.green</strong></a>. Para informações adicionais, consulte o time de inteligência de dados: <a href="mailto:sara.mortara@re.green">Sara Mortara</a>, <a href="mailto:felipe.bocca@re.green">Felipe Bocca</a> ou <a href="mailto:nathalia.monalisa@re.green">Nathalia Monalisa</a>.</p>
+<div id="convenções-de-código" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Convenções de código<a href="convenções-de-código-dados-e-metadados.html#convenções-de-código" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="geral" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Geral<a href="convenções-de-código-dados-e-metadados.html#geral" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Os projetos da <strong>re.green</strong> são normalmente desenvolvidos na linguagem R e seguem o padrão de estilo
+do <a href="https://style.tidyverse.org">tidyverse</a>. É possível utilizar o pacote <a href="https://styler.r-lib.org/index.html">styler</a> para formatar e checar a consistência do código em relação ao padrão desejado.</p>
+<p>As principais regras de estilo a serem seguidas estão descritas abaixo:</p>
+<ul>
+<li>Disposição do código
+<ul>
+<li><a href="https://style.tidyverse.org/syntax.html#spacing">Espaçamento</a></li>
+<li><a href="https://style.tidyverse.org/syntax.html#long-lines">Tamanho Máximo de Linha</a></li>
+<li><a href="https://style.tidyverse.org/files.html#internal-structure">Organização interna</a></li>
+</ul></li>
+<li><a href="https://style.tidyverse.org/syntax.html#assignment">Símbolo de atribuição</a></li>
+<li><a href="https://style.tidyverse.org/syntax.html#character-vectors">Uso de Aspas</a></li>
+<li><a href="https://style.tidyverse.org/syntax.html#comments">Comentários</a></li>
+<li>Convenção de nomes
+<ul>
+<li><a href="https://style.tidyverse.org/files.html#names">Nomes de Arquivos</a></li>
+<li><a href="https://style.tidyverse.org/syntax.html#object-names">Nomes de Variáveis</a> seguindo snake_case</li>
+</ul></li>
+<li>Indicação de localização dos arquivos: sempre que possível, usar caminhos relativos</li>
+<li><a href="https://style.tidyverse.org/functions.html">Regras gerais para funções</a></li>
+</ul>
+<p>Além das regras de definição de funções descritas no tópico acima, é necessário que todas elas estejam documentadas seguindo o padrão <a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html"><strong>roxygen2</strong></a>, incluindo funções auxiliares. Cada função deve estar em um arquivo separado. Além disso, as funções devem conter controle de fluxo e exceções com blocos <code>tryCatch()</code>.</p>
+<p>Para ver um exemplo de função documentada, cheque o <a href="https://style.tidyverse.org/documentation.html">guia de estilo do tidyverse</a>.
+Ou consulte o nosso <a href="https://github.com/R-egreen/example_regreen">repositório de exemplos</a>.</p>
+</div>
+</div>
+<div id="dependência-de-pacotes" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Dependência de pacotes<a href="convenções-de-código-dados-e-metadados.html#dependência-de-pacotes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para gerenciamento de dependências, deve-se utilizar o pacote <a href="https://rstudio.github.io/renv/articles/renv.html"><strong>renv</strong></a> para referenciar todas as bibliotecas utilizadas no projeto e suas respectivas versões.</p>
+</div>
+<div id="repositórios-de-código" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Repositórios de código<a href="convenções-de-código-dados-e-metadados.html#repositórios-de-código" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="geral-1" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Geral<a href="convenções-de-código-dados-e-metadados.html#geral-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Para entrega de produtos que envolvam código, os arquivos deverão ser entregues em um repositório no github da empresa. O link será fornecido e será dada autorização para inclusão de colaboradores(as) com papel de escrita.</p>
+<p>O repositório também deve conter um README.md detalhado, informando:
+- contexto do projeto
+- árvore com a estrutura de arquivos/diretórios do bucket de armazenamento dos dados na nuvem (ver seção <strong>Entrega de dados</strong>)
+- link do bucket de armazenamento dos dados na nuvem
+- indicação das funções onde cada conjunto de dados é inputado
+- desenvolvedores do projeto e contato (e-mail)</p>
+</div>
+<div id="conteúdo-do-repositório" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Conteúdo do repositório<a href="convenções-de-código-dados-e-metadados.html#conteúdo-do-repositório" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Seguir estrutura de pastas de acordo com a definição abaixo:</p>
+<pre><code>.
+├── README.md # contém intruções gerais para uso 
+├── renv.lock* # contém dependências
+├── script/ # contém scripts de exemplo de chamada das funções
+└── functions/ # contém funções documentadas, cada função em um arquivo separado</code></pre>
+</div>
+<div id="versionamento" class="section level3 hasAnchor" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> Versionamento<a href="convenções-de-código-dados-e-metadados.html#versionamento" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A ramificação principal deve ser a <code>main</code> e armazenar a base de código principal, estando sempre funcional (sem código quebrado). Em relação ao fluxo de versionamento, sugerimos o Gitflow. Nele o desenvolvimento deve ser encapsulado em um ramo <code>dev</code> que funciona como pai para as ramificações de features e hot-fix. Uma vez que o ramo <code>dev</code> tenha adquirido código novo o suficiente para que o produto seja considerado uma nova versão, deve-se fazer o merge com o ramo principal <code>main</code>.</p>
+<p>Para mais informações, consulte o <a href="https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow"><strong>tutorial</strong></a> e veja a figura abaixo que ilustra a ideia básica do gitflow:</p>
+<div class="figure">
+<img src="images/gitflow.jpg" alt="" />
+<p class="caption">gitflow</p>
+</div>
+</div>
+</div>
+<div id="padrão-de-metadados" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Padrão de metadados<a href="convenções-de-código-dados-e-metadados.html#padrão-de-metadados" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Todo conjunto de dados deve apresentar um arquivo de metadados associado com informações que descrevem o conjunto, de acordo com o padrão abaixo. O nome do arquivo deve seguir a estrutura: metadata_&lt;nome_do_arquivo&gt;.ext. Para ver exemplos, consulte a pasta <code>metadata/</code> no nosso <a href="https://github.com/R-egreen/example_regreen">repositório de exemplos</a>.</p>
+<div id="dados-tabulares" class="section level3 hasAnchor" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> 1 - Dados tabulares:<a href="convenções-de-código-dados-e-metadados.html#dados-tabulares" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Metadado no formato .csv seguindo o padrão:</p>
+<ul>
+<li>Nome da variável</li>
+<li>Descrição da variável</li>
+<li>Tipo de dado da variável</li>
+<li>Exemplo da variável</li>
+</ul>
+<p>Exemplo:</p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Variável</th>
+<th align="right">Descrição</th>
+<th align="right">Tipo de dado</th>
+<th align="right">Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">Gênero</td>
+<td align="right">Gênero da espécie</td>
+<td align="right">caractere</td>
+<td align="right">Schinus</td>
+</tr>
+<tr class="even">
+<td align="right">Forma de vida</td>
+<td align="right">Descrição da forma de vida da espécie</td>
+<td align="right">caractere</td>
+<td align="right">árvore; epífita</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="dados-espaciais" class="section level3 hasAnchor" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> 2- Dados espaciais<a href="convenções-de-código-dados-e-metadados.html#dados-espaciais" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Metadado no formato .txt ou .xml seguindo o padrão:</p>
+<ul>
+<li>2.1.Shapefile
+<ul>
+<li>Tipo: classe geométrica do objeto (ponto, linha ou polígono)</li>
+<li>Sistema de coordenadas (CRS): método de projeção dos dados<br />
+</li>
+<li>Escala: relação entre a distância no mapa/arquivo e a distância no chão</li>
+<li>Atributos: nome das colunas que descrevem os elementos registrados nas linhas do arquivo</li>
+</ul></li>
+<li>2.2.Raster
+<ul>
+<li>Tipo: classe do objeto importado (RasterLayer, RasterStack ou RasterBrick)</li>
+<li>Extensão: cobertura geográfica total ocupada pelo objeto espacial (xmin, xmax, ymin, ymax)</li>
+<li>Sistema de coordenadas (CRS): método de projeção dos dados</li>
+<li>Resolução: área real coberta por cada pixel</li>
+<li>Colunas: número de colunas</li>
+<li>Valores: número de registros</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="entrega-dos-dados" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Entrega dos dados<a href="convenções-de-código-dados-e-metadados.html#entrega-dos-dados" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Todos os dados e metadados de um produto devem ser armazenados em um <a href="https://aws.amazon.com/pt/s3/">bucket AWS</a>, cujo link será disponibilizado pela re.green. É absolutamente necessário que os diretórios estejam organizados, seguindo uma hierarquia lógica, sem arquivos misturados às pastas.</p>
+<p>Abaixo segue uma sugestão de árvore de diretórios, mas mudanças podem ser implementadas se ajudam a refinar a organização da estrutura:</p>
+<pre><code>.
+|__ project_name 
+|   |__ data
+|       |__ csv
+|       |   |____ file1.csv
+|       |   |____ file2.csv
+|       | 
+|       |__ rasters
+|       |   |____ file3.tif
+|       |
+|       |__ shapes
+|       |   |____ file4.gpkg
+|       |
+|       |__ metadata
+|           |____ metadata_file1.csv
+|           |____ metadata_file2.csv
+|           |____ metadata_file3.txt
+|           |____ metadata_file4.txt</code></pre>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="a-diretoria-de-inteligência.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/02-convencoes.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["manual_inteligencia.pdf", "manual_inteligencia.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

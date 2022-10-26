@@ -67,7 +67,7 @@ Para mais informações, consulte o [**tutorial**](https://www.atlassian.com/br/
 
 ## Padrão de metadados
 
-Todo conjunto de dados deve apresentar um arquivo de metadados associado com informações que descrevem o conjunto, de acordo com o padrão abaixo. Para ver exemplos, consulte a pasta `metadata/` no nosso [repositório de exemplos](https://github.com/R-egreen/example_regreen). 
+Todo conjunto de dados deve apresentar um arquivo de metadados associado com informações que descrevem o conjunto, de acordo com o padrão abaixo. O nome do arquivo deve seguir a estrutura: metadata_\<nome_do_arquivo\>.ext. Para ver exemplos, consulte a pasta `metadata/` no nosso [repositório de exemplos](https://github.com/R-egreen/example_regreen). 
 
 
 ### 1 - Dados tabulares: 
@@ -120,7 +120,7 @@ Abaixo segue uma sugestão de árvore de diretórios, mas mudanças podem ser im
     |       |   |____ file3.tif
     |       |
     |       |__ shapes
-    |       |   |____ file4.shp
+    |       |   |____ file4.gpkg
     |       |
     |       |__ metadata
     |           |____ metadata_file1.csv
