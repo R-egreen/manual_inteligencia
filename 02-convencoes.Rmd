@@ -24,10 +24,17 @@ As principais regras de estilo a serem seguidas estão descritas abaixo:
 - Indicação de localização dos arquivos: sempre que possível, usar caminhos relativos
 - [Regras gerais para funções](https://style.tidyverse.org/functions.html)
 
+### Funções
+
 Além das regras de definição de funções descritas no tópico acima, é necessário que todas elas estejam documentadas seguindo o padrão [**roxygen2**](https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html), incluindo funções auxiliares. Cada função deve estar em um arquivo separado. Além disso, as funções devem conter controle de fluxo e exceções com blocos `tryCatch()`. 
 
 Para ver um exemplo de função documentada, cheque o [guia de estilo do tidyverse](https://style.tidyverse.org/documentation.html).
 Ou consulte o nosso [repositório de exemplos](https://github.com/R-egreen/example_regreen). 
+
+**Importante**
+
+- funções não devem ler arquivos do disco ou escrever arquivos no disco
+- leitura/escrita deve ser feita no script que aplica as funções
 
 ## Dependência de pacotes
   Para gerenciamento de dependências, deve-se utilizar o pacote [**renv**](https://rstudio.github.io/renv/articles/renv.html) para referenciar todas as bibliotecas utilizadas no projeto e suas respectivas versões.

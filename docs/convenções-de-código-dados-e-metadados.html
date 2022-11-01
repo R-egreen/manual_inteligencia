@@ -82,6 +82,7 @@
 <li class="chapter" data-level="3.1" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#convenções-de-código"><i class="fa fa-check"></i><b>3.1</b> Convenções de código</a>
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#geral"><i class="fa fa-check"></i><b>3.1.1</b> Geral</a></li>
+<li class="chapter" data-level="3.1.2" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#funções"><i class="fa fa-check"></i><b>3.1.2</b> Funções</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#dependência-de-pacotes"><i class="fa fa-check"></i><b>3.2</b> Dependência de pacotes</a></li>
 <li class="chapter" data-level="3.3" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#repositórios-de-código"><i class="fa fa-check"></i><b>3.3</b> Repositórios de código</a>
@@ -145,9 +146,17 @@ do <a href="https://style.tidyverse.org">tidyverse</a>. É possível utilizar o 
 <li>Indicação de localização dos arquivos: sempre que possível, usar caminhos relativos</li>
 <li><a href="https://style.tidyverse.org/functions.html">Regras gerais para funções</a></li>
 </ul>
+</div>
+<div id="funções" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Funções<a href="convenções-de-código-dados-e-metadados.html#funções" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Além das regras de definição de funções descritas no tópico acima, é necessário que todas elas estejam documentadas seguindo o padrão <a href="https://cran.r-project.org/web/packages/roxygen2/vignettes/roxygen2.html"><strong>roxygen2</strong></a>, incluindo funções auxiliares. Cada função deve estar em um arquivo separado. Além disso, as funções devem conter controle de fluxo e exceções com blocos <code>tryCatch()</code>.</p>
 <p>Para ver um exemplo de função documentada, cheque o <a href="https://style.tidyverse.org/documentation.html">guia de estilo do tidyverse</a>.
 Ou consulte o nosso <a href="https://github.com/R-egreen/example_regreen">repositório de exemplos</a>.</p>
+<p><strong>Importante</strong></p>
+<ul>
+<li>funções não devem ler arquivos do disco ou escrever arquivos no disco</li>
+<li>leitura/escrita deve ser feita no script que aplica as funções</li>
+</ul>
 </div>
 </div>
 <div id="dependência-de-pacotes" class="section level2 hasAnchor" number="3.2">

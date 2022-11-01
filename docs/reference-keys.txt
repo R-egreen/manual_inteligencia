@@ -5,6 +5,7 @@ diversidade
 convenções-de-código-dados-e-metadados
 convenções-de-código
 geral
+funções
 dependência-de-pacotes
 repositórios-de-código
 geral-1
