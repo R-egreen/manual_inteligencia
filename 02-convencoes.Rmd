@@ -106,8 +106,7 @@ Metadado no formato .txt ou .xml seguindo o padrão:
   - Extensão: cobertura geográfica total ocupada pelo objeto espacial (xmin, xmax, ymin, ymax)
   - Sistema de coordenadas (CRS): método de projeção dos dados
   - Resolução: área real coberta por cada pixel
-  - Colunas: número de colunas
-  - Valores: número de registros
+  - Valores: para o caso de raster contínuo especificar valores mínimo e máximo possíveis, para o caso de raster categórico, especificar valores únicos possíveis
   
   
 ## Entrega dos dados
