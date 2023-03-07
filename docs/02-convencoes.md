@@ -77,7 +77,7 @@ Para mais informações, consulte o [**tutorial**](https://www.atlassian.com/br/
 Todo conjunto de dados deve apresentar um arquivo de metadados associado com informações que descrevem o conjunto, de acordo com o padrão abaixo. O nome do arquivo deve seguir a estrutura: metadata_\<nome_do_arquivo\>.ext. Para ver exemplos, consulte a pasta `metadata/` no nosso [repositório de exemplos](https://github.com/R-egreen/example_regreen). 
 
 
-### 1 - Dados tabulares: 
+### Dados tabulares
 Metadado no formato .csv seguindo o padrão:
 
 - Nome da variável
@@ -92,16 +92,16 @@ Variável | Descrição | Tipo de dado | Exemplo
 Gênero| Gênero da espécie | caractere | Schinus
 Forma de vida | Descrição da forma de vida da espécie | caractere | árvore; epífita 
 
-### 2- Dados espaciais
+### Dados espaciais
 Metadado no formato .txt ou .xml seguindo o padrão:
 
-- 2.1.Shapefile
+#### Shapefile
   - Tipo: classe geométrica do objeto (ponto, linha ou polígono)
   - Sistema de coordenadas (CRS): método de projeção dos dados  
   - Escala: relação entre a distância no mapa/arquivo e a distância no chão
   - Atributos: nome das colunas que descrevem os elementos registrados nas linhas do arquivo
   
-- 2.2.Raster
+#### Raster
   - Tipo: classe do objeto importado (RasterLayer, RasterStack ou RasterBrick)
   - Extensão: cobertura geográfica total ocupada pelo objeto espacial (xmin, xmax, ymin, ymax)
   - Sistema de coordenadas (CRS): método de projeção dos dados
@@ -116,23 +116,19 @@ Todos os dados e metadados de um produto devem ser armazenados em um [bucket AWS
 Abaixo segue uma sugestão de árvore de diretórios, mas mudanças podem ser implementadas se ajudam a refinar a organização da estrutura:
 
     .
-    |__ project_name 
-    |   |__ data
-    |       |__ csv
-    |       |   |____ file1.csv
-    |       |   |____ file2.csv
-    |       | 
-    |       |__ rasters
-    |       |   |____ file3.tif
-    |       |
-    |       |__ shapes
-    |       |   |____ file4.gpkg
-    |       |
-    |       |__ metadata
-    |           |____ metadata_file1.csv
-    |           |____ metadata_file2.csv
-    |           |____ metadata_file3.txt
-    |           |____ metadata_file4.txt
+    └── data
+        ├── csv
+        │   ├── file1.csv
+        │   └── file2.csv
+        ├── metadata
+        │   ├── metadata_file1.csv
+        │   ├── metadata_file2.csv
+        │   ├── metadata_raster1.txt
+        │   └── metadata_shape1.txt
+        ├── rasters
+        │   └── raster1.tif
+        └── shapes
+            └── shape1.gpkg
 
 
 

@@ -13,3 +13,4 @@ url: 'http\://R-egreen.github.io/manual_inteligencia'
 
 Este é o manual da equipe de inteligência. Aqui definimos o que acreditamos e 
 aplicamos em nosso cotidiano de trabalho. 
+

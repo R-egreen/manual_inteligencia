@@ -14,4 +14,6 @@ versionamento
 padrão-de-metadados
 dados-tabulares
 dados-espaciais
+shapefile
+raster
 entrega-dos-dados

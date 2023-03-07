@@ -93,8 +93,8 @@
 </ul></li>
 <li class="chapter" data-level="3.4" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#padrão-de-metadados"><i class="fa fa-check"></i><b>3.4</b> Padrão de metadados</a>
 <ul>
-<li class="chapter" data-level="3.4.1" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#dados-tabulares"><i class="fa fa-check"></i><b>3.4.1</b> 1 - Dados tabulares:</a></li>
-<li class="chapter" data-level="3.4.2" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#dados-espaciais"><i class="fa fa-check"></i><b>3.4.2</b> 2- Dados espaciais</a></li>
+<li class="chapter" data-level="3.4.1" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#dados-tabulares"><i class="fa fa-check"></i><b>3.4.1</b> Dados tabulares</a></li>
+<li class="chapter" data-level="3.4.2" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#dados-espaciais"><i class="fa fa-check"></i><b>3.4.2</b> Dados espaciais</a></li>
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="convenções-de-código-dados-e-metadados.html"><a href="convenções-de-código-dados-e-metadados.html#entrega-dos-dados"><i class="fa fa-check"></i><b>3.5</b> Entrega dos dados</a></li>
 </ul></li>
@@ -198,7 +198,7 @@ Ou consulte o nosso <a href="https://github.com/R-egreen/example_regreen">reposi
 <h2><span class="header-section-number">3.4</span> Padrão de metadados<a href="convenções-de-código-dados-e-metadados.html#padrão-de-metadados" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Todo conjunto de dados deve apresentar um arquivo de metadados associado com informações que descrevem o conjunto, de acordo com o padrão abaixo. O nome do arquivo deve seguir a estrutura: metadata_&lt;nome_do_arquivo&gt;.ext. Para ver exemplos, consulte a pasta <code>metadata/</code> no nosso <a href="https://github.com/R-egreen/example_regreen">repositório de exemplos</a>.</p>
 <div id="dados-tabulares" class="section level3 hasAnchor" number="3.4.1">
-<h3><span class="header-section-number">3.4.1</span> 1 - Dados tabulares:<a href="convenções-de-código-dados-e-metadados.html#dados-tabulares" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">3.4.1</span> Dados tabulares<a href="convenções-de-código-dados-e-metadados.html#dados-tabulares" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Metadado no formato .csv seguindo o padrão:</p>
 <ul>
 <li>Nome da variável</li>
@@ -239,26 +239,28 @@ Ou consulte o nosso <a href="https://github.com/R-egreen/example_regreen">reposi
 </table>
 </div>
 <div id="dados-espaciais" class="section level3 hasAnchor" number="3.4.2">
-<h3><span class="header-section-number">3.4.2</span> 2- Dados espaciais<a href="convenções-de-código-dados-e-metadados.html#dados-espaciais" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">3.4.2</span> Dados espaciais<a href="convenções-de-código-dados-e-metadados.html#dados-espaciais" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Metadado no formato .txt ou .xml seguindo o padrão:</p>
-<ul>
-<li>2.1.Shapefile
+<div id="shapefile" class="section level4 hasAnchor" number="3.4.2.1">
+<h4><span class="header-section-number">3.4.2.1</span> Shapefile<a href="convenções-de-código-dados-e-metadados.html#shapefile" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>Tipo: classe geométrica do objeto (ponto, linha ou polígono)</li>
 <li>Sistema de coordenadas (CRS): método de projeção dos dados<br />
 </li>
 <li>Escala: relação entre a distância no mapa/arquivo e a distância no chão</li>
 <li>Atributos: nome das colunas que descrevem os elementos registrados nas linhas do arquivo</li>
-</ul></li>
-<li>2.2.Raster
+</ul>
+</div>
+<div id="raster" class="section level4 hasAnchor" number="3.4.2.2">
+<h4><span class="header-section-number">3.4.2.2</span> Raster<a href="convenções-de-código-dados-e-metadados.html#raster" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>Tipo: classe do objeto importado (RasterLayer, RasterStack ou RasterBrick)</li>
 <li>Extensão: cobertura geográfica total ocupada pelo objeto espacial (xmin, xmax, ymin, ymax)</li>
 <li>Sistema de coordenadas (CRS): método de projeção dos dados</li>
 <li>Resolução: área real coberta por cada pixel</li>
 <li>Valores: para o caso de raster contínuo especificar valores mínimo e máximo possíveis, para o caso de raster categórico, especificar valores únicos possíveis</li>
-</ul></li>
 </ul>
+</div>
 </div>
 </div>
 <div id="entrega-dos-dados" class="section level2 hasAnchor" number="3.5">
@@ -266,23 +268,19 @@ Ou consulte o nosso <a href="https://github.com/R-egreen/example_regreen">reposi
 <p>Todos os dados e metadados de um produto devem ser armazenados em um <a href="https://aws.amazon.com/pt/s3/">bucket AWS</a>, cujo link será disponibilizado pela re.green. É absolutamente necessário que os diretórios estejam organizados, seguindo uma hierarquia lógica, sem arquivos misturados às pastas.</p>
 <p>Abaixo segue uma sugestão de árvore de diretórios, mas mudanças podem ser implementadas se ajudam a refinar a organização da estrutura:</p>
 <pre><code>.
-|__ project_name 
-|   |__ data
-|       |__ csv
-|       |   |____ file1.csv
-|       |   |____ file2.csv
-|       | 
-|       |__ rasters
-|       |   |____ file3.tif
-|       |
-|       |__ shapes
-|       |   |____ file4.gpkg
-|       |
-|       |__ metadata
-|           |____ metadata_file1.csv
-|           |____ metadata_file2.csv
-|           |____ metadata_file3.txt
-|           |____ metadata_file4.txt</code></pre>
+└── data
+    ├── csv
+    │   ├── file1.csv
+    │   └── file2.csv
+    ├── metadata
+    │   ├── metadata_file1.csv
+    │   ├── metadata_file2.csv
+    │   ├── metadata_raster1.txt
+    │   └── metadata_shape1.txt
+    ├── rasters
+    │   └── raster1.tif
+    └── shapes
+        └── shape1.gpkg</code></pre>
 
 </div>
 </div>
