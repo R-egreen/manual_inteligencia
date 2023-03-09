@@ -1,6 +1,6 @@
 # Convenções de código, dados e metadados
 
-Este capítulo fornece convenções de código e dados para os projetos analíticos da empresa [**re.green**](https://www.re.green/). Para informações adicionais, consulte o time de inteligência de dados: [Sara Mortara](mailto:sara.mortara@re.green), [Felipe Bocca](mailto:felipe.bocca@re.green) ou [Nathalia Monalisa](mailto:nathalia.monalisa@re.green).
+Este capítulo fornece convenções de código e dados para os projetos analíticos da empresa [**re.green**](https://www.re.green/). Para informações adicionais, consulte o time de inteligência de dados: Sara Mortara, Felipe Bocca ou Daniel Franzolin.
 
 ## Convenções de código
 
@@ -78,7 +78,7 @@ Todo conjunto de dados deve apresentar um arquivo de metadados associado com inf
 
 
 ### Dados tabulares
-Metadado no formato .csv seguindo o padrão:
+Metadado no formato .yaml seguindo o padrão:
 
 - Nome da variável
 - Descrição da variável
@@ -93,20 +93,20 @@ Gênero| Gênero da espécie | caractere | Schinus
 Forma de vida | Descrição da forma de vida da espécie | caractere | árvore; epífita 
 
 ### Dados espaciais
-Metadado no formato .txt ou .xml seguindo o padrão:
+Metadado no formato .yaml seguindo o padrão:
 
 #### Shapefile
-  - Tipo: classe geométrica do objeto (ponto, linha ou polígono)
-  - Sistema de coordenadas (CRS): método de projeção dos dados  
-  - Escala: relação entre a distância no mapa/arquivo e a distância no chão
-  - Atributos: nome das colunas que descrevem os elementos registrados nas linhas do arquivo
+Tipo: classe geométrica do objeto (ponto, linha ou polígono)
+CRS: método de projeção dos dados  
+Escala: relação entre a distância no mapa/arquivo e a distância no chão
+Atributos: nome das colunas que descrevem os elementos registrados nas linhas do arquivo
   
 #### Raster
-  - Tipo: classe do objeto importado (RasterLayer, RasterStack ou RasterBrick)
-  - Extensão: cobertura geográfica total ocupada pelo objeto espacial (xmin, xmax, ymin, ymax)
-  - Sistema de coordenadas (CRS): método de projeção dos dados
-  - Resolução: área real coberta por cada pixel
-  - Valores: para o caso de raster contínuo especificar valores mínimo e máximo possíveis, para o caso de raster categórico, especificar valores únicos possíveis
+Tipo: classe do objeto importado (RasterLayer, RasterStack ou RasterBrick)
+Extensão: cobertura geográfica total ocupada pelo objeto espacial (xmin, xmax, ymin, ymax)
+CRS: método de projeção dos dados
+Resolução: área real coberta por cada pixel
+Valores: para o caso de raster contínuo especificar valores mínimo e máximo possíveis, para o caso de raster categórico, especificar valores únicos possíveis
   
   
 ## Entrega dos dados
